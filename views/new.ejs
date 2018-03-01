@@ -1,0 +1,24 @@
+<% include partials/header %>
+
+<div class="container">
+    <div class="jumbotron">
+        <div class="">New Blog</div>
+    </div>
+    <div class="container text-center">
+        <form action="/blogs" method="POST">
+            <div class="form-group w-50 container">
+                <input type="text" class="form-control" name="blog[title]"  placeholder="title">
+            </div>
+            <div class="form-group w-50 container">
+                <input type="text" class="form-control" name="blog[image]"  placeholder="image">
+            </div>
+            <div class="form-group w-50 container">
+                <textarea class="form-control"  rows="5" name="blog[body]"></textarea>
+            </div>
+            <button type="submit" class="btn btn-lg btn-outline-secondary">Submit</button>
+        </form>
+    </div>          
+</div>    
+
+
+<% include partials/footer %>
